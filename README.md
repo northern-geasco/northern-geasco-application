@@ -10,4 +10,4 @@ License
 -------
 [Owen Donckers]
 
-[OwenDonckers]:https://github.com/odonckers/Snake-Software/blob/master/LICENSE.md
+[Owen Donckers]:https://github.com/odonckers/Snake-Software/blob/master/LICENSE.md
