@@ -2,7 +2,9 @@
 import re
 import os
 
-def scan(filename, virsigdes):
+def scan(filename):
+	config = open("/Users/odonckers/Documents/Hacking/Github/Snake-Software/data/config.cfg", "r").read().split('\n')
+	virsigdes = config[0].split('=')
 	if os.path.isdir(filename) == True:
 		safedir = 0
 		os.chdir(filename)
@@ -11,7 +13,7 @@ def scan(filename, virsigdes):
 				print '\033[94m' + "[Can't Open Directorys]" + '\033[0m' + " %s" % fileline
 			elif os.path.exists(fileline) == True: 
 				filecontent = open(fileline)
-				for line in open(virsigdes):
+				for line in open(virsigdes[1]):
 					virname, virsigs = line.split('=')
 					if filecontent == re.match('\Q\E\s*', virsigs):
 						print '\033[91m' + "[Infected by %s]" % virname + '\033[0m' + " %s" % fileline

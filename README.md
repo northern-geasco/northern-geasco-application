@@ -2,6 +2,12 @@ Snake-Software
 ==============
 A simple antivirus written in Python in which can scan files. (Antivirus still under development.)
 
+Install
+-------
+- vim (or another type of file editor) data/config.cfg
+  - Edit the virsig\_path variable to the destination of the file starting from the / of the system.
+- And finally enjoy!
+
 Future Ideas
 ------------
 - [ ] Go into directory after directory and scan files inside of them
