@@ -19,7 +19,7 @@ Future Ideas
 
 Insperation
 -----------
-I have always wanted to make an antivirus, but at the time I was only fluint in Perl. After learning some Python, I found an antivirus called [Candy-Software]. I loved it, but, I felt as if I was stealing from the Programmer who made it. So, I chalenged myself to build my own antivirus from scratch but in Python.
+I have always wanted to make an antivirus, but at the time I was only fluint in Perl. After learning some Python, I found an antivirus called [Candy-Software]. I loved it, but, I felt as if I was stealing from the programmer who made it. So, I challenged myself to build my own antivirus from scratch but only Python.
 
 Version
 -------
