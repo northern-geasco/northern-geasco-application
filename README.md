@@ -1,4 +1,4 @@
-Snake-Software
+Snake-Antivirus
 ==============
 A simple antivirus written in Python in which can scan files. (Antivirus still under development.)
 
@@ -30,4 +30,4 @@ License
 [Owen Donckers]
 
 [Candy-Software]:https://github.com/iskernel/candy-antivirus
-[Owen Donckers]:https://github.com/odonckers/Snake-Software/blob/master/LICENSE.md
+[Owen Donckers]:https://github.com/odonckers/Snake-Antivirus/blob/master/LICENSE.md
