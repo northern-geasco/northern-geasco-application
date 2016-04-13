@@ -2,6 +2,12 @@ Snake-Software
 ==============
 A simple antivirus written in Python in which can scan files. (Antivirus still under development.)
 
+Future Ideas
+------------
+[ ] Go into directory after directory and scan files inside of them
+[ ] Quarantine infected files
+[ ] Scan memory usage for viruses that attack only when program is started
+
 Version
 -------
 1.0
