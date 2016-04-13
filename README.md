@@ -5,9 +5,10 @@ A simple antivirus written in Python in which can scan files. (Antivirus still u
 Install
 -------
 - vim (or another type of file editor) data/config.cfg
-  - Edit the virsig\_path variable to the destination of the file starting from the / of the system.
+  - Edit the virsig\_path variable to the destination of the virsig file starting from the / of the system.
+  - Edit the log\_path variable to the destination of the event.log file starting from the / of the system.
 - vim (or another type of file editor) antivirus.py
-  - change the destination for the config.cfg file on the 12th line.
+  - change the variable configlocal destination to the config.cfg file.
 - And finally enjoy!
 
 Future Ideas
