@@ -2,8 +2,8 @@
 import re
 import os
 
-def scan(filename):
-	config = open("/Users/odonckers/Documents/Hacking/Github/Snake-Software/data/config.cfg", "r").read().split('\n')
+def scan(filename, configlocal):
+	config = open(configlocal, "r").read().split('\n')
 	virsigdes = config[0].split('=')
 	if os.path.isdir(filename) == True:
 		safedir = 0

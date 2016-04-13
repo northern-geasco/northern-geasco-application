@@ -6,6 +6,8 @@ Install
 -------
 - vim (or another type of file editor) data/config.cfg
   - Edit the virsig\_path variable to the destination of the file starting from the / of the system.
+- vim (or another type of file editor) antivirus.py
+  - change the destination for the config.cfg file on the 5th file
 - And finally enjoy!
 
 Future Ideas

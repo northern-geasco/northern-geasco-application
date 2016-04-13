@@ -9,7 +9,7 @@ while True:
 		filename = ""
 		while filename == "":
 			filename = raw_input( "File/Directory to Scan: " )
-		lib.scan(filename)
+		lib.scan(filename, "/Users/odonckers/Documents/Hacking/Github/Snake-Software/data/config.cfg")
 		continue
 	elif select == "x":
 		sys.exit(0)
