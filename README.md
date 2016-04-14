@@ -13,7 +13,7 @@ Install
 
 Future Ideas
 ------------
-- [ ] Go into directory after directory and scan files inside of them
+- [ ] Go into directory after directory and scan files inside of them (Please help, anybody!)
 - [ ] Quarantine infected files
 - [ ] Scan memory usage for viruses that attack only when program is started
 - [ ] Create a GUI interface for my software

@@ -1,9 +1,8 @@
 #!/usr/bin/python
 import lib
-from time import gmtime, strftime
 import sys
 
-configlocal = "/Users/odonckers/Documents/Hacking/Github/Snake-Antivirus/data/config.cfg"
+configlocal = "/Users/odonckers/Dropbox/Github/Snake-Antivirus/data/config.cfg"
 
 while True:
 	select = raw_input("Antivirus 1.0 Snake\n[a] Start Scan\n[b] See Scan Log\n[x] Exit\nSelection: ")
