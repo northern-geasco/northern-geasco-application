@@ -2,6 +2,8 @@ Snake-Antivirus
 ==============
 A simple antivirus written in Python in which can scan files. (Antivirus still under development.)
 
+How to Install
+--------------
 1. Enter scripts/ directory
    - `cd scripts/`
 2. run bash install.sh or ./install.sh
