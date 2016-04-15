@@ -2,13 +2,9 @@ Snake-Antivirus
 ==============
 A simple antivirus written in Python in which can scan files. (Antivirus still under development.)
 
-Install
--------
-- cd scripts/
-  - run ./install.sh or bash install.sh and follow the directions
-- vim (or another type of file editor) antivirus.py
-  - change the variable _configlocal_ destination to the config.cfg file
-- And finally enjoy!
+Wiki
+----
+If you would like to know how to install the program, please go [here].
 
 Future Ideas
 ------------
@@ -29,5 +25,6 @@ License
 -------
 [Owen Donckers]
 
+[Wiki]:https://github.com/odonckers/Snake-Antivirus/wiki
 [Candy-Software]:https://github.com/iskernel/candy-antivirus
 [Owen Donckers]:https://github.com/odonckers/Snake-Antivirus/blob/master/LICENSE.md
