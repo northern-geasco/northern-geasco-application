@@ -2,9 +2,16 @@ Snake-Antivirus
 ==============
 A simple antivirus written in Python in which can scan files. (Antivirus still under development.)
 
-Wiki
-----
-If you would like to know how to install the program, please go [here].
+1. Enter scripts/ directory
+   - `cd scripts/`
+2. run bash install.sh or ./install.sh
+   - `bash install.sh`
+3. Follow the directions of the install.sh program
+4. Edit the antivirus.py file and change the `configlocal` variable to the destination of the config.cfg file starting from the root or / if you are on a Linux machine, and if you are on a DOS machine than you can do it from the root or \ of the system.
+   - `vim antivirus.py` or `nano antivirus.py`
+   - `configlocal = "<Location of SnakeAntivirus starting from the root or />"`
+5. Run run.sh in the SnakeAntivirus directory.
+   - `bash run.sh` or `./run.sh`
 
 Future Ideas
 ------------
