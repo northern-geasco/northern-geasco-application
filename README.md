@@ -25,6 +25,6 @@ License
 -------
 [Owen Donckers]
 
-[Wiki]:https://github.com/odonckers/Snake-Antivirus/wiki
+[here]:https://github.com/odonckers/Snake-Antivirus/wiki
 [Candy-Software]:https://github.com/iskernel/candy-antivirus
 [Owen Donckers]:https://github.com/odonckers/Snake-Antivirus/blob/master/LICENSE.md
