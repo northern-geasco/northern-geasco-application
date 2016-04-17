@@ -17,6 +17,11 @@ def scan(filename, configlocal):
 					virname, virsigs = line.split('=')
 					if filecontent == re.match('\Q\E\s*', virsigs):
 						print '\033[91m' + "[Infected by %s]" % virname + '\033[0m' + " %s" % fileline
+						ynremove = raw_input("Would you like to remove the file? (y/n) ")
+						if ynremove == "y" or ynremove == "Y":
+							os.remove(fileline)
+						else:
+							print "Moving On"
 					elif filecontent != re.match('\Q\E\s*', virsigs):
 						safedir += 1
 						if safedir == 1781:
@@ -25,10 +30,15 @@ def scan(filename, configlocal):
 	elif os.path.exists(filename) == True:
 		safefile = 0
 		for fileline in open(filename):
-			for line in open("data/virsig.cfg", "r"):
+			for line in open(virsigdes[1], "r"):
 				virname, virsigs = line.split('=')
 				if fileline == re.match('\Q\E\s*', virsigs):
 					print '\033[91m' + "[Infected by %s]" + '\033[0m' + " %s" % (virname, filename)
+					ynremove = raw_input("Would you like to remove the file? (y/n) ")
+					if ynremove == "y" or ynremove == "Y":
+						os.remove(fileline)
+					else:
+						print "Moving On"
 				elif fileline != re.match('\Q\E\s*', virsigs):
 					safefile += 1
 					if safefile == 1781:
