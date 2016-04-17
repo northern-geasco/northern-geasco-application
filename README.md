@@ -28,7 +28,7 @@ I have always wanted to make an antivirus, but at the time I was only fluint in 
 
 Version
 -------
-1.0
+1.0.3
 
 License
 -------
