@@ -21,6 +21,7 @@ def scan(filename, configlocal):
 						safedir += 1
 						if safedir == 1781:
 							print '\033[92m' + "[Clean]" + '\033[0m' + " %s" % fileline 
+							safedir = 0
 	elif os.path.exists(filename) == True:
 		safefile = 0
 		for fileline in open(filename):
@@ -32,5 +33,6 @@ def scan(filename, configlocal):
 					safefile += 1
 					if safefile == 1781:
 						print '\033[92m' + "[Clean]" + '\033[0m' + " %s" % filename
+						safefile = 0
 	else:
 		print '\033[94m' + "[Can't Open]" + '\033[0m' + " %s" % filename
