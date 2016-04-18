@@ -18,8 +18,8 @@ How to Install
 Future Ideas
 ------------
 - [ ] Go into directory after directory and scan files inside of them (Please help, anybody!)
-- [x] Delete infected files
-- [ ] Quarantine infected files
+- [X] Delete infected files
+- [X] Quarantine infected files
 - [ ] Scan memory usage for viruses that attack only when program is started
 - [ ] Create a GUI interface for my software
 

@@ -17,11 +17,16 @@ def scan(filename, configlocal):
 					virname, virsigs = line.split('=')
 					if filecontent == re.match('\Q\E\s*', virsigs):
 						print '\033[91m' + "[Infected by %s]" % virname + '\033[0m' + " %s" % fileline
-						ynremove = raw_input("Would you like to remove the file? (y/n) ")
-						if ynremove == "y" or ynremove == "Y":
+						infectedsel = raw_input("What would you like to do with the infected file?\n[a] Remove file\n[b] Quarantine file\n[c] Nothing\nSelection: ")
+						if infectedsel == "a":
 							os.remove(fileline)
-						else:
-							print "Moving On"
+							print "File successfully removed!"
+						elif infectedsel == "b":
+							for qfile in open(fileline, 'w+'):
+								qfile.write("#/%s\n" % qfile)
+							print "File successfully quarantined!"
+						elif infectedsel == "c":
+							print "Moving on."
 					elif filecontent != re.match('\Q\E\s*', virsigs):
 						safedir += 1
 						if safedir == 1781:
@@ -34,11 +39,16 @@ def scan(filename, configlocal):
 				virname, virsigs = line.split('=')
 				if fileline == re.match('\Q\E\s*', virsigs):
 					print '\033[91m' + "[Infected by %s]" + '\033[0m' + " %s" % (virname, filename)
-					ynremove = raw_input("Would you like to remove the file? (y/n) ")
-					if ynremove == "y" or ynremove == "Y":
-						os.remove(fileline)
-					else:
-						print "Moving On"
+                                                infectedsel = raw_input("What would you like to do with the infected file?\n[a] Remove file\n[b] Quarantine file\n[c] Nothing\nSelection: ")
+                                                if infectedsel == "a":
+                                                        os.remove(fileline)
+                                                        print "File successfully removed!"
+                                                elif infectedsel == "b":
+                                                        for qfile in open(fileline, 'w+'):
+                                                                qfile.write("#/%s\n" % qfile)
+                                                        print "File successfully quarantined!"
+                                                elif infectedsel == "c":
+                                                        print "Moving on."
 				elif fileline != re.match('\Q\E\s*', virsigs):
 					safefile += 1
 					if safefile == 1781:
