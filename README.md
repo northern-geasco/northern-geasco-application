@@ -1,6 +1,6 @@
 Snake-Antivirus
 ==============
-A simple antivirus written in Python in which can scan files. (Antivirus still under development.)
+A simple antivirus written in Python in which can scan files.
 
 How to Install
 --------------
@@ -26,6 +26,10 @@ Future Ideas
 Insperation
 -----------
 I have always wanted to make an antivirus, but at the time I was only fluint in Perl. After learning some Python, I found an antivirus called [Candy-Software]. I loved it, but, I felt as if I was stealing from the programmer who made it. So, I challenged myself to build my own antivirus from scratch but only Python.
+
+Disclaimer
+----------
+This antivirus is still under development. The system is unstable still, so I am not responsible for any broken computers if this software does something to your computer. And, this software is not a stand alone antivurs, yet.
 
 Version
 -------
