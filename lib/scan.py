@@ -17,16 +17,12 @@ def scan(filename, configlocal):
 					virname, virsigs = line.split('=')
 					if filecontent == re.match('\Q\E\s*', virsigs):
 						print '\033[91m' + "[Infected by %s]" % virname + '\033[0m' + " %s" % fileline
-						infectedsel = raw_input("What would you like to do with the infected file?\n[a] Remove file\n[b] Quarantine file\n[c] Nothing\nSelection: ")
+						infectedsel = raw_input("What would you like to do with the infected file?\n[a] Remove file\n[b] Nothing\nSelection: ")
 						if infectedsel == "a":
 							os.remove(fileline)
 							print "File successfully removed!"
 						elif infectedsel == "b":
-							for qfile in open(fileline, 'w+'):
-								qfile.write("#/%s\n" % qfile)
-							print "File successfully quarantined!"
-						elif infectedsel == "c":
-							print "Moving on."
+							print "Moving On."
 					elif filecontent != re.match('\Q\E\s*', virsigs):
 						safedir += 1
 						if safedir == 1781:
