@@ -19,7 +19,7 @@ Future Ideas
 ------------
 - [ ] Go into directory after directory and scan files inside of them (Please help, anybody!)
 - [X] Delete infected files
-- [X] Quarantine infected files (Removed this option, because there was no point in quarantining the file.)
+- [X] ~~Quarantine infected files~~ (Removed this option, because there was no point in quarantining the file.)
 - [ ] Scan memory usage for viruses that attack only when program is started
 - [ ] Create a GUI interface for my software
 
